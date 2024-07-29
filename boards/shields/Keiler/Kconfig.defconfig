@@ -1,4 +1,4 @@
-if SHIELD_Kei_DONGLE
+if SHIELD_KEI_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "Kei Dongle"
