@@ -8,7 +8,6 @@
 
 #define SYM 1
 #define NUM 2
-#define NAV 3
 
 
 
@@ -90,7 +89,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │          │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V                 &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &kp ESC    &lp NAV SPACE &kp TAB          &lp SYM RET  &lp NUM BSPC &kp DEL
+                                  &kp ESC    &kp TAB    &lp SYM SPACE    &lp NUM RET     &kp BSPC   &kp DEL
         //                      ╰──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────╯
         >;
         };
@@ -116,40 +115,19 @@
         num_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮          ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│     [    │    7     │    8     │    9     │    ]     │          │          │          │          │          │          │
-          &kp LBKT    &kp N7      &kp N8      &kp N9   &kp RBKT              &bt BT_CLR  &bt BT_SEL 1 &bt BT_SEL 0  &none   &none
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│    ;     │    4     │    5     │    6     │     =    │          │          │          │          │          │          │
-          &kp SEMI    &kp N4      &kp N5      &kp N6     &kp EQUAL              &none    &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│    `     │    1     │    2     │    3     │     \    │          │          │          │          │          │          │
-            &kp GRAVE   &kp N1      &kp N2      &kp N3  &kp BSLH                &none      &none      &none      &none      &none
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //│          │          │    .      │    0     │     -   │          │          │          │          │          │          │
-                                  &kp DOT      &kp N0   &kp MINUS               &none      &none      &none
-        //                      ╰──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────╯
-            >;
-        };
-
-        nav_layer {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮          ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │          │          │          │          │          │          │
-            &none         &none      &none      &none      &none              &kp K_REDO  &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO
+        //│          │    7     │    8     │    9     │          │          │          │          │          │          │          │
+          &bt BT_CLR   &mp F7 N7  &mp F8 N8  &mp F9 N9  &kp HOME              &kp PG_UP  &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │    4     │    5     │    6     │          │          │          │          │          │          │          │
-            &kp LGUI A &kp LALT R &kp LCTRL S &kp LSHFT   &none               &kp CAPSLOCK &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT
+          &bt BT_SEL 1 &mp F4 N4  &mp F5 N5  &mp F6 N6  &kp END               &kp PG_DN  &kp LEFT   &kp UP     &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │    1     │    2     │    3     │    0     │          │          │          │          │          │          │
-          &none         &none      &none      &none      &none              &kp INSERT   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+          &bt BT_SEL 0 &mp F1 N1  &mp F2 N2  &mp F3 N3  &mp F10 N0            &none      &none      &kp DOWN   &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &none       &none      &none                &kp RET   &kp BSPC   &kp DEL
+                                  &none      &kp LSHFT  &cs                   &none      &none      &none
         //                      ╰──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────╯
             >;
         };
-
-
-
 
     };
 };
