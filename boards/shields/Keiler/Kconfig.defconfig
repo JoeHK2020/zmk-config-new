@@ -1,4 +1,4 @@
-if SHIELD_KEILER_DONGLE
+if SHIELD_K_DONGLE
 config ZMK_KEYBOARD_NAME
     default "Keiler"
 
@@ -9,7 +9,7 @@ config ZMK_USB
     default y
 endif
 
-if SHIELD_KEILER_LEFT || SHIELD_KEILER_RIGHT || SHIELD_KEILER_DONGLE
+if SHIELD_K_LEFT || SHIELD_K_RIGHT || SHIELD_K_DONGLE
 config ZMK_SPLIT
     default y
 
