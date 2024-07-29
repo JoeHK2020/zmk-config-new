@@ -1,4 +1,4 @@
-#include "Keiler.dtsi"
+#include "Kei.dtsi"
 
 &kscan0 {
     compatible = "zmk,kscan-mock";

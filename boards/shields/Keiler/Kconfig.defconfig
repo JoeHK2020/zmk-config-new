@@ -1,6 +1,7 @@
-if SHIELD_K_DONGLE
+if SHIELD_Kei_DONGLE
+
 config ZMK_KEYBOARD_NAME
-    default "Keiler"
+    default "Kei Dongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -9,7 +10,8 @@ config ZMK_USB
     default y
 endif
 
-if SHIELD_K_LEFT || SHIELD_K_RIGHT || SHIELD_K_DONGLE
+if SHIELD_KEI_LEFT || SHIELD_KEI_RIGHT || SHIELD_KEI_DONGLE
+
 config ZMK_SPLIT
     default y
 

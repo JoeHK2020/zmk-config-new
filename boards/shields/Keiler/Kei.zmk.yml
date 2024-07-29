@@ -1,6 +1,6 @@
 file_format: "1"
-id: keiler
-name: Keiler
+id: kei
+name: Kei
 type: shield
 url: https://github.com/jonathanforking/Keiler
 requires: 
@@ -9,6 +9,8 @@ requires:
 features:
   - keys
 siblings:
-  - Keiler_left
-  - Keiler_right
-  - Keiler_dongle
+  - Kei_left
+  - Kei_right
+  - Kei_dongle
+
+# should this be a nice_nano_v2 instead?
