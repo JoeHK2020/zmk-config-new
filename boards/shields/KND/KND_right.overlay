@@ -1,4 +1,4 @@
-#include "Kei.dtsi"
+#include "KND.dtsi"
 
 &default_transform {
 	col-offset = <18>;
