@@ -1,0 +1,8 @@
+config SHIELD_KEI_LEFT
+	def_bool $(shields_list_contains,Kei_left)
+
+config SHIELD_KEI_RIGHT
+	def_bool $(shields_list_contains,Kei_right)
+
+config SHIELD_KEI_DONGLE
+    def_bool $(shields_list_contains,Kei_dongle)

@@ -1,0 +1,15 @@
+file_format: "1"
+id: kei
+name: Kei
+type: shield
+url: https://github.com/jonathanforking/Keiler
+requires: 
+  - pro_micro
+  - seeeduino_xiao_ble
+features:
+  - keys
+siblings:
+  - Kei_left
+  - Kei_right
+  - Kei_dongle
+
