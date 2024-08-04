@@ -1,6 +1,6 @@
-config SHIELD_KND_LEFT
+config SHIELD_KND_L
 	def_bool $(shields_list_contains,KND_L)
 
-config SHIELD_KND_RIGHT
+config SHIELD_KND_R
 	def_bool $(shields_list_contains,KND_R)
 
