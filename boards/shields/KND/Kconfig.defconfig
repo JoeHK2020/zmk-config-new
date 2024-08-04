@@ -2,6 +2,9 @@
 
 if SHIELD_KND_LEFT
 
+config ZMK_KEYBOARD_NAME
+    default "KND left"
+
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
