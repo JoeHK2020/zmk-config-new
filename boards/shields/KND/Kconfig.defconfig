@@ -1,6 +1,6 @@
 
 
-if SHIELD_KND_LEFT
+if SHIELD_KND_L
 
 config ZMK_KEYBOARD_NAME
     default "KBL"
@@ -15,7 +15,7 @@ config ZMK_BLE
     default y
 endif
 
-if SHIELD_KND_RIGHT
+if SHIELD_KND_R
 
 config ZMK_SPLIT
     default y

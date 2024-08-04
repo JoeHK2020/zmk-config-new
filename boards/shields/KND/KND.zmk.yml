@@ -8,6 +8,6 @@ requires:
 features:
   - keys
 siblings:
-  - KND_left
-  - KND_right
+  - KND_L
+  - KND_R
 
