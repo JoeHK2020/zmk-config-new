@@ -21,6 +21,6 @@ include:
   - board: nice_nano_v2
     shield: settings_reset
   - board: nice_nano_v2
-    shield: KND_left
+    shield: KND_L
   - board: nice_nano_v2
-    shield: KND_right
+    shield: KND_R
